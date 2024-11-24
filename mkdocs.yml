@@ -70,3 +70,5 @@ plugins:
   - search
   - git-revision-date-localized
   - social
+nav:
+  - Home: index.md
