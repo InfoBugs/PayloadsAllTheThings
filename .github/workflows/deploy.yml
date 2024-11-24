@@ -1,0 +1,29 @@
+name: Deploy MkDocs
+
+on:
+  push:
+    branches:
+      - main  # Replace with your default branch name if not 'main'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs
+          pip install mkdocs-material
+
+      - name: Build and Deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdocs gh-deploy --force
