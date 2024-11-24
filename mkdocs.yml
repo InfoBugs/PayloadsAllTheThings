@@ -1,8 +1,8 @@
 site_name: Payloads All The Things
 site_description: 'Payloads All The Things, a list of useful payloads and bypasses for Web Application Security'
-site_url: https://swisskyrepo.github.io/PayloadsAllTheThings
+site_url: https://PayloadsAllTheThings.m14r41.in
 
-repo_url: https://github.com/swisskyrepo/PayloadsAllTheThings/
+repo_url: https://github.com/infobugs/PayloadsAllTheThings/
 edit_uri: blob/master/
 
 # copyright: © 2016 PATT
